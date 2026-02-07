@@ -1,0 +1,28 @@
+# Codex Multi-SWE-Bench Configuration
+
+# Codex CLI settings
+codex:
+  # Codex CLI command (specify full path if not in PATH)
+  command: "openai"
+  # Timeout in seconds
+  timeout: 1800
+  # Whether to auto-approve edits
+  auto_approve: true
+  # Model to use (options: o4-mini, o3-mini, gpt-4o, gpt-4.1, gpt-5-nano, gpt-5-mini, gpt-5.2-codex, etc.)
+  model: "gpt-5-mini"
+
+# Evaluation settings
+evaluation:
+  # Working directory (for cloning and editing repos)
+  workspace_dir: "./workspace"
+  # Output directory
+  output_dir: "./outputs"
+  # Whether to keep workspace after evaluation
+  keep_workspace: false
+  # Parallelism (current version does not support parallel execution, reserved for future use)
+  num_workers: 1
+
+# Logging settings
+logging:
+  level: "INFO"
+  file: "./logs/eval.log"

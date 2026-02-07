@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+*.manifest
+*.spec
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# === Runtime Generated Files (Large/Temporary) ===
+
+# Entire data directory (cloned repos, Docker builds, logs, results)
+# These are all regenerated during evaluation
+data/
+
+# Codex CLI workspace (runtime cloned repos)
+workspace/
+
+# Evaluation workspace
+eval_workspace/
+
+# HuggingFace cache
+.cache/
+datasets/.cache/
+
+# Downloaded datasets from HuggingFace (large files, can be re-downloaded)
+datasets/go/
+datasets/java/
+datasets/js/
+datasets/ts/
+datasets/rust/
+datasets/c/
+datasets/cpp/
+datasets/python/
+datasets/*
+
+# Keep example datasets
+!datasets/example_*.jsonl
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Log files (except in specific directories)
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# Root level config generated during runtime
+eval_config.json
+
+
+outputs/
